@@ -1,12 +1,17 @@
+import { Sorter } from "./Sorter";
+
 // 1. only for array of numbers
 
-export class NumbersCollection {
+export class NumbersCollection extends Sorter {
   // these 4 lines are equivalent of the 1 below (type + initialize)
   // data: number[];
   // constructor(data: number[]) {
   //   this.data = data;
   // }
-  constructor(public data: number[]) {}
+  constructor(public data: number[]) {
+    super()
+  }
+
 
   // getter/accessor
   get length(): number {
